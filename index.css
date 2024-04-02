@@ -106,6 +106,7 @@ p{
     max-width: 540px;
     font-weight: 400;
     font-size: 17px;
+    display: flex;
 }
 .layout-1{
     margin: 0px 160px 160px 160px ;
@@ -133,6 +134,22 @@ p{
 .cards h5{
     max-width: 132px;
     height: 60px;
+}
+.layout-1 .cards h5::after{
+    content: "";
+    max-width: 50px;
+    height: 3px;
+    display: flex;
+    background-color: #FF6551;
+    margin-top: 30px;
+}
+.layout-1 .card-3 h5::after{
+    content: "";
+    max-width: 50px;
+    height: 3px;
+    display: flex;
+    background-color:white;
+    margin-top: 30px;
 }
 .cards .border{
     max-width: 70px;
@@ -182,8 +199,30 @@ p{
 }
 .products{
     display: flex;
-    justify-content: space-evenly;
     padding-top: 100px;
+    gap: 50px;
+}
+.products .price-1{
+    color: #BDBDBD;
+}
+.products .price-2{
+    color: #2435A1;
+}
+.products .sec-2{
+    white-space: pre-line;
+}
+.products .prices{
+    display: flex;
+    gap: 10px;
+}
+.products .sec-2 .hollow-btn{
+    border-radius: 50px;
+    display: flex;
+    padding: 10px;
+}
+.products .sec-2 p{
+    max-width: 230px;
+    padding: 0px 20px 20px 20px;
 }
 .sale-btn{
     align-items: center;
@@ -194,6 +233,18 @@ p{
     font-size: x-small;
     max-width: 25px;
 }
+.products .sec-2 .filled-btn{
+    background: #26335D;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 10px;
+}
+.products .sec-2 .filled-btn span{
+    font-size: 15px;
+    color: #F3CD03;
+    padding-right: 8px;
+}
+
 
 
 
@@ -220,6 +271,14 @@ p{
 .layout-3 h1{
     max-width: 340px;
     color: white;
+}
+.layout-3 h1::before{
+    content: "";
+    max-width: 100px;
+    height: 7px;
+    display: flex;
+    background-color: #FF6551;
+    margin-bottom: 25px;
 }
 .layout-3 p{
     max-width: 350px;
@@ -273,7 +332,7 @@ padding: 0px;
 }
 .layout-4 .card-1, .card-2, .card-4{
     max-width: 270px;
-    white-space: break-spaces;
+    
 }
 .layout-4 .cards h1{
     color: #FF6551;
@@ -298,7 +357,7 @@ padding: 0px;
 }
 .layout-5 .sec-2{
     display: flex;
-    justify-content: space-between;
+    gap: 300px;
 }
 .layout-5 .sec-2 .sec_2-1{
     align-items: center;
@@ -355,27 +414,30 @@ padding: 0px;
 .layout-6 .sec_2-1{
     display: flex;
 }
-
-.footer .sections{
-    padding: 100px;
-}
 .footer .sections{
     display: flex;
-    justify-content: space-evenly;
+    gap: 100px;
+    padding: 80px 130px;
 }
-.footer li{
+.footer ul{
     color: #737373;
-    font-size: small;
-    
-}
-
-footer ul{
-    text-decoration: none;
+    font-size: small; 
+    white-space: pre-line;   
 }
 .footer .part-2{
     background: #FAFAFA;
     padding: 30px;
+    display: flex;
+    gap: 500px;
 }
 .footer span{
     color: #FF6551;
+}
+.footer .part-2 .sec-2{
+    margin-left: 10px;
+    color: #FF6551;
+    font-size: 20px;
+}
+.footer .part-2 .sec-1{
+    margin-left: 130px;
 }
