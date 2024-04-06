@@ -6,7 +6,7 @@
     padding: 0px;
 }
 .container{
-    max-width: 1440px;
+    max-width: 1520px;
     margin: auto;
 }
 li{
@@ -131,6 +131,21 @@ p{
     gap: 20px;
     box-shadow: 0px 13px 19px 0px #00000012;
 }
+.card:hover{
+    background-color:#FF6551;
+}
+.card:hover .icon-border{
+    background-color: white;
+}
+.card:hover h5{
+    color: white;
+}
+.card:hover p{
+    color: white;
+}
+.card:hover h5::after{
+    background-color: white;
+}
 .icon-border{
     background:#DDEEFE;
     max-width: 70px;
@@ -169,14 +184,28 @@ p{
 .product{
     max-width: 238px;
 }
-.product img{
-    position: absolute;
-}
-.product .icons{
+.product-img{
     position: relative;
+}
+.product-img::before{
+    position: absolute;
+    content: "sale";
+    display: flex;
+    background-color: #E74040;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    top: 15px;
+    left: 15px;
+    border-radius: 3px;
+}
+
+.product .icons{
+    position: absolute;
     padding: 230px 0px 0px 37px;
     display: flex;
     gap: 12px;
+    top: 0;
    
 }
 .product .icons button{
@@ -261,6 +290,7 @@ p{
 .products{
     display: flex;
     gap: 40px;
+    position: relative;
 }
 
 /* section-3 */
@@ -336,14 +366,24 @@ p{
 .pricing{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     box-shadow:0px 13px 19px 0px #00000012 ;
-    padding: 50px;
+    padding: 35px;
     position: relative;
 }
 .pricing-tag{
     display: flex;
     gap: 40px;
+    position: relative;
+}
+.pricing-tag .pop-up{
+    position: absolute;
+    border-radius: 45px;
+    color: white;
+   background-color: #E77C40;
+   padding: 26px 16px;
+   left: 61%;
+   bottom: 94%;
 }
 /*testimonials */
 
@@ -469,4 +509,9 @@ input{
 .footer .layout{
     display: flex;
     flex-direction: column;
+}
+.icon-links{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
