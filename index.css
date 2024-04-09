@@ -88,8 +88,8 @@ p {
 }
 
 .container {
-    padding: 100px 90px;
-    max-width: 1520px;
+    padding: 100px 50px;
+    max-width: 1050px;
     margin: auto;
     align-items: center;
 }
@@ -100,7 +100,6 @@ p {
     gap: 28px;
     padding-bottom: 50px;
 }
-
 
 /* header */
 
@@ -113,9 +112,9 @@ p {
 
 .navigators {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 17px 0px;
+    padding: 30px 0px;
 }
 
 .site-id {
@@ -125,7 +124,7 @@ p {
 
 .navigator-link {
     display: flex;
-    gap: 70px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -150,10 +149,12 @@ p {
 }
 
 .header .container {
+    padding: 0px 120px; 
+}
+.banner{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 120px;
+    justify-content: center;
 }
 
 /* courses */
@@ -224,8 +225,8 @@ p {
     gap: 30px;
 }
 
-/* section-2 */
-.section-2 {
+/* card-expert */
+.card-expert {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,13 +276,6 @@ p {
     font-size: 21px;
 }
 
-.product span:hover {
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24;
-}
 
 .product .link {
     padding-top: 30px;
@@ -369,23 +363,23 @@ p {
     position: relative;
 }
 
-/* section-3 */
-.section-3 {
+/* girl-img */
+.girl-img {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section-3 .container {
+.girl-img  .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 80px;
-    gap: 100px;
+    gap: 40px;
 }
 
-.section-3 .hollow-btn {
+.girl-img  .hollow-btn {
     border: transparent;
     display: flex;
     align-items: center;
@@ -394,7 +388,7 @@ p {
     padding: 12px 0px 10px 30px;
 }
 
-.section-3 h1::before {
+.girl-img  h1::before {
     content: "";
     display: flex;
     background-color:  var(--secondary-color);
@@ -403,7 +397,7 @@ p {
     margin-bottom: 35px;
 }
 
-/* packesges */
+/* packages */
 .packages {
     display: flex;
     flex-direction: column;
@@ -479,7 +473,6 @@ p {
 
 .pricing-tag {
     display: flex;
-    gap: 40px;
     position: relative;
     align-items: center;
     justify-content: space-evenly;
@@ -656,16 +649,19 @@ input {
 }
 
 /* ---- */
-.final-part {
+.social-media {
     background-color: #FAFAFA;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px 0px;
+    padding: 30px 90px;
     max-height: 30px;
-    align-items: center;
 }
-
-.final-part i {
+.social-media .container{
+    padding: 0px;
+}
+.media-links{
+    display: flex;
+    justify-content: space-between;
+}
+.social-media i {
     color: var(--secondary-color);
 }
 
