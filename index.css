@@ -1,17 +1,14 @@
 * {
-    max-width: 100%;
-    margin: 0px;
     font-family: "montserrat";
     font-weight: 700;
-    padding: 0px;
 }
 :root{
     --primary-color:#26335D ;
     --secondary-color: #FF6551;
 }
-.full-body {
-    max-width: 100%;
-    margin: auto;
+body{
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -58,49 +55,54 @@ button {
 
 h1 {
     color: white;
-    font-size: 58px;
+    font-size: 45px;
+    margin: 0;
 }
 
 h2 {
     font-size: 40px;
     color: black;
+    margin: 0;
 }
 
 h4 {
     font-size: 20px;
     color: white;
     font-weight: 400;
+    margin: 0;
 }
 
 h5 {
     color: var(--secondary-color);
     font-size: 16px;
+    margin: 0;
 }
 
 h6 {
     color: var(--secondary-color);
     font-size: 14px;
+    margin: 0;
 }
 
 p {
     font-size: 14px;
     color: #737373;
+    max-width: 530px;
+    margin: 0;
 }
 
 .container {
-    padding: 100px 50px;
+    padding: 50px 0px;
     max-width: 1050px;
     margin: auto;
-    align-items: center;
 }
 
 .introduction {
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    padding-bottom: 50px;
+    gap: 20px;
 }
-
 /* header */
 
 .header {
@@ -114,7 +116,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px 0px;
 }
 
 .site-id {
@@ -140,23 +141,21 @@ p {
 }
 
 .navigator-link a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .navigators .hollow-btn {
     border: none;
     color: white;
 }
-
-.header .container {
-    padding: 0px 120px; 
-}
 .banner{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.banner .introduction{
+    max-width: 390px;
+}
 /* courses */
 .courses {
     display: flex;
@@ -171,6 +170,9 @@ p {
     flex-direction: column;
     gap: 20px;
     box-shadow: 0px 13px 19px 0px #00000012;
+}
+.card h5{
+    color: black;
 }
 
 .card:hover {
@@ -353,8 +355,8 @@ p {
 .product .layout-1 {
     display: flex;
     flex-direction: column;
-    gap: 13px;
     padding: 10px;
+    gap: 20px;
 }
 
 .products {
@@ -363,37 +365,38 @@ p {
     position: relative;
 }
 
-/* girl-img */
-.girl-img {
+/* middle-sec */
+.middle-sec {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.girl-img  .container {
+.middle-sec  .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 80px;
     gap: 40px;
+    max-width: 1230px;
 }
 
-.girl-img  .hollow-btn {
+.middle-sec  .hollow-btn {
     border: transparent;
     display: flex;
     align-items: center;
     border-radius: 40px;
     max-width: 153px;
-    padding: 12px 0px 10px 30px;
+    padding: 12px 10px 12px 20px;
 }
 
-.girl-img  h1::before {
+.middle-sec  h1::before {
     content: "";
     display: flex;
     background-color:  var(--secondary-color);
     height: 7px;
-    width: 120px;
+    width: 100px;
     margin-bottom: 35px;
 }
 
@@ -465,10 +468,10 @@ p {
 .pricing {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     box-shadow: 0px 13px 19px 0px #00000012;
     padding: 25px 15px;
     position: relative;
+    gap: 20px;
 }
 
 .pricing-tag {
@@ -476,6 +479,7 @@ p {
     position: relative;
     align-items: center;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 .pricing-tag .pop-up {
@@ -484,37 +488,12 @@ p {
     color: white;
     background-color: #E77C40;
     padding: 26px 16px;
-    left: 58%;
+    left: 60%;
     bottom: 94%;
 }
 
-.pricing:hover {
-    background-color:var(--secondary-color);
-}
-
-.pricing:hover p {
-    color: white;
-}
-
-.pricing:hover .filled-btn {
-    background-color: white;
-    color: var(--secondary-color);
-}
-
-.pricing:hover h2 {
-    color: black;
-}
-.pricing:hover h5{
-    color: white;
-}
-.pricing:hover h4{
-    color: white;
-}
-.pricing:hover h6 {
-    color: #2435A1;
-}
-
 /*testimonials */
+
 .teacher {
     display: flex;
     flex-direction: column;
@@ -590,6 +569,8 @@ p {
 }
 
 .text-box .introduction {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 25px;
 }
@@ -605,6 +586,12 @@ input {
 }
 
 /* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .footer h5 {
     color: black;
@@ -618,7 +605,8 @@ input {
 .footer ul {
     display: flex;
     flex-direction: column;
-    gap: 12px
+    gap: 12px;
+    align-items: baseline;
 }
 
 .footer .about {
@@ -653,6 +641,10 @@ input {
     background-color: #FAFAFA;
     padding: 30px 90px;
     max-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .social-media .container{
     padding: 0px;
