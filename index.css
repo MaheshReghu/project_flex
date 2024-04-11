@@ -621,20 +621,10 @@ input {
     align-items: center;
 }
 
-.address {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.address span {
+.footer span {
     color: var(--secondary-color);
 }
 
-.address a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
-}
 
 /* ---- */
 .social-media {
