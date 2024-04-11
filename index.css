@@ -277,6 +277,13 @@ p {
 .product span {
     font-size: 21px;
 }
+.icons button:nth-child(3){
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
 
 
 .product .link {
@@ -361,7 +368,7 @@ p {
 
 .products {
     display: flex;
-    gap: 40px;
+    gap: 18px;
     position: relative;
 }
 
@@ -385,10 +392,12 @@ p {
 .middle-sec  .hollow-btn {
     border: transparent;
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 40px;
     max-width: 153px;
     padding: 12px 10px 12px 20px;
+    gap: 6px;
 }
 
 .middle-sec  h1::before {
@@ -398,6 +407,9 @@ p {
     height: 7px;
     width: 100px;
     margin-bottom: 35px;
+}
+.middle-sec span{
+    font-size: 16px;
 }
 
 /* packages */
@@ -427,6 +439,7 @@ p {
     font-size: 15px;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .pricing h5 {
@@ -434,6 +447,7 @@ p {
     font-size: 15px;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .pricing .filled-btn {
@@ -441,8 +455,12 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.pricing h4 span {
+.tick-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tick-icon h4 span{
     background-color: #BDBDBD;
     border-radius: 20px;
     font-size: 32px;
@@ -522,7 +540,7 @@ p {
     cursor: pointer;
 }
 
-.unfill-str span {
+.review .material-symbols-outlined:nth-child(5) {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
@@ -615,14 +633,16 @@ input {
     gap: 20px;
 }
 
-.address a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
 .footer span {
     color: var(--secondary-color);
+}
+.link li:nth-child(4){
+    font-variation-settings:
+    'FILL' 1;
+}
+.about a{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -630,11 +650,6 @@ input {
 .social-media {
     background-color: #FAFAFA;
     padding: 30px 90px;
-    max-height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .social-media .container{
     padding: 0px;
@@ -645,6 +660,7 @@ input {
 }
 .social-media i {
     color: var(--secondary-color);
+    
 }
 
 .icon-links {
