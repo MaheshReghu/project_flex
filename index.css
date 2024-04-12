@@ -228,7 +228,7 @@ p {
 .cards {
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 /* card-expert */
@@ -369,7 +369,7 @@ p {
 .products {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 20px;
     position: relative;
 }
 
