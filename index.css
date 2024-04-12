@@ -226,7 +226,8 @@ p {
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
     gap: 30px;
 }
 
@@ -241,10 +242,6 @@ p {
     padding: 13px 14px 10px 14px;
     border-radius: 30px;
     background: white;
-}
-
-.product {
-    max-width: 238px;
 }
 
 .product-img {
@@ -370,8 +367,9 @@ p {
 }
 
 .products {
-    display: flex;
-    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
     position: relative;
 }
 
