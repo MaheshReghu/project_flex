@@ -278,9 +278,8 @@ img{
     position: relative;
 }
 
-.product-img::before {
+ .sale-tag{
     position: absolute;
-    content: "sale";
     display: flex;
     background-color: #E74040;
     color: white;
@@ -433,14 +432,14 @@ img{
     max-width: 1230px;
 } 
 
-.middle-sec a {
+.middle-sec .hollow-btn{
     display: flex;
-    align-items: center;
     gap: 8px;
-    text-decoration: none;
-    color: var(--primary-color);
     font-size: 12px;
-    font-weight: 700;
+    max-width: 98px;
+    border: none;
+    padding: 0px;
+    justify-content: space-between;
 }
 
 .middle-sec h4 {
@@ -515,11 +514,14 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #FF6551;;
 }
 
 .pricing .filled-btn:hover {
-    border: 1.5px solid;
+    border: 2px solid;
     border-color: #FF6551;
+    background-color: transparent;
+    color: var(--primary-color);
    
 }
 
@@ -675,6 +677,8 @@ input {
     border: transparent;
     width: 520px;
     padding-left: 20px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .text-box .filled-btn {
@@ -754,3 +758,4 @@ footer .container{
     font-size: 20px;
     padding-right: 5%;
 }
+
