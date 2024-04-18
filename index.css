@@ -286,7 +286,7 @@ img{
     background-color: #E74040;
     color: white;
     font-size: 13px;
-    padding: 5px 10px;
+    padding: 3px 10px;
     top: 15px;
     left: 15px;
     border-radius: 3px;
@@ -337,6 +337,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 240px;
 }
 .product .rating-btn {
     display: flex;
@@ -531,7 +532,7 @@ img{
     gap: 20px;
 }
 
-.tick-icon h4 span {
+.pricing h4 span {
     background-color: #BDBDBD;
     border-radius: 20px;
     font-size: 32px;
@@ -542,7 +543,7 @@ img{
     border-radius: 20px;
     font-size: 32px;
 }
-.pricing span:nth-child(4){
+.pricing h5 .material-symbols-outlined:nth-child(4){
     background-color: #BDBDBD;
 }
 .pricing h2 {
