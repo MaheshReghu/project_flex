@@ -711,10 +711,6 @@ footer ul {
     padding: 0px;
 }
 
-footer .link:nth-child(5) {
-    max-width: 300px;
-}
-
 footer .about {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1.5fr;
