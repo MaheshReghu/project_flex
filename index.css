@@ -338,7 +338,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 240px;
+    
 }
 .product .rating-btn {
     display: flex;
