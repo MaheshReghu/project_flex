@@ -10,6 +10,8 @@
     --primary-text-color: white;
     --secondary-text-color: black;
     --paragraph-color:#737373;
+    --footer-tail-color:#FAFAFA;
+    --danger-color: #E74040;
 }
 body{
     margin: 0;
@@ -240,7 +242,7 @@ img{
         'wght' 400,
         'GRAD' 0,
         'opsz' 24;
-    color: #E74040;
+    color: var(--danger-color);
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -277,14 +279,14 @@ img{
 .product-img {
     position: relative;
 }
-.cart span{
+.icon-btn span{
     font-weight: 300;
 }
  .sale-tag{
     position: absolute;
     display: flex;
-    background-color: #E74040;
-    color: white;
+    background-color: var(--danger-color);
+    color:var(--primary-text-color);
     font-size: 13px;
     padding: 3px 10px;
     top: 15px;
@@ -336,7 +338,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     max-width: 240px;
 }
 .product .rating-btn {
@@ -410,7 +411,7 @@ img{
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
     position: relative;
 }
 /*  */
@@ -474,11 +475,12 @@ img{
 .pricing .icon-border {
     background-color: #2435A1;
     border-radius: 50px;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .pricing span {
@@ -515,12 +517,12 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #FF6551;;
+    border: 2px solid var(--primary-color);
 }
 
 .pricing .filled-btn:hover {
     border: 2px solid;
-    border-color: #FF6551;
+    border-color: var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
    
@@ -543,9 +545,7 @@ img{
     border-radius: 20px;
     font-size: 32px;
 }
-.pricing h5 .material-symbols-outlined:nth-child(4){
-    background-color: #BDBDBD;
-}
+
 .pricing h2 {
     color: var(--primary-color);
 }
@@ -576,19 +576,23 @@ img{
     gap: 30px;
 }
 
-.pricing-tag .pop-up {
+.pricing .pop-up {
     position: absolute;
     border-radius: 45px;
     color: var(--primary-text-color);
     background-color: #E77C40;
-    height: 70px;
-    width: 70px;
-    top: 0;
-    right: 33%;
+    height: 80px;
+    width: 80px;
+    top: -10px;
+    right: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
 } 
+.pop-up span{
+    font-size: 20px;
+    font-weight: 700;
+}
 
 .teacher {
     display: flex;
@@ -636,7 +640,7 @@ img{
 }
 
 .teacher h6 {
-    color: #737373;
+    color: var(--paragraph-color);
 }
 
 .teacher p {
@@ -732,15 +736,18 @@ footer .container{
     font-variation-settings:
         'FILL' 1;
 }
-
+.link li span{
+    font-size: 28px;
+}
 .about a {
     display: flex;
     align-items: center;
-    color: #737373;
+    gap: 10px;
+    color: var(--paragraph-color);
 } 
  
 .footer-tail {
-    background-color: #FAFAFA;
+    background-color: var(--footer-tail-color);
 }
 
 
