@@ -1,0 +1,181 @@
+@media(max-width:1024px){
+    .container-large{
+        padding: 0px 35px;
+    }
+    .container{
+        padding: 50px 29px;
+        margin: auto;
+    }
+}
+@media (max-width:768px){
+    
+  h5{
+    font-size: 14px;
+   }
+   h1{
+    font-size: 30px;
+   }
+   h4{
+    font-size: 16px;
+   }
+   h6{
+    font-size: 12px;
+   }
+   h2{
+    font-size: 33px;
+   }
+   p{
+    font-size: 12px;
+   }
+   
+    .site-id{
+        font-size: 27px;
+        display: flex;
+        gap: 12px;
+       }
+    .navigator-link ul{
+        display: none;
+    }
+    .banner img{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .menu-bar .material-symbols-outlined{
+        font-size: 33px;
+    }
+    button{
+        font-size: 10px
+    }
+    /* .container-mid{
+        
+    }
+    .container{
+        
+    }  */
+    .container-mid button .material-symbols-outlined{
+        font-size: 17px;
+    }
+     .navigators {
+        justify-content:space-between;
+        padding: 0px 50px;
+    }
+    .white-bg .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .white-bg .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .white-bg .pricing-tag{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .about{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .menu-bar :hover {
+        background-color: #2b428f;
+    }
+    .navigator-link{
+        gap: 10px;
+    }
+}
+@media(max-width:540px){
+    h5{
+        font-size: 10px;
+       }
+       h1{
+        font-size: 25px;
+       }
+       h4{
+        font-size: 10px;
+       }
+       h6{
+        font-size: 10px;
+       }
+       h2{
+        font-size: 20px;
+       }
+       p{
+        font-size: 10px;
+       } 
+       .introduction{
+        gap: 25px;
+       }
+       .menu-bar .material-symbols-outlined {
+        font-size: 28px;
+    }
+    .navigators .hollow-btn {
+        display: none;
+    }
+    .site-id{
+        font-size: 22px;
+    }
+    .experts{
+        display:grid;
+        gap: 30px;
+    }
+    .middle-sec img{
+        display: none;
+    }
+    .pricing h4{
+        font-size: 11px;
+    }
+    .pricing h5{
+        font-size: 11px;
+    }
+    .container-large{
+        padding: 0px 10px;
+    }
+    .teacher img{
+        max-width: 110px;
+    }
+    .text-box h4 {
+        width: 300px;
+        font-size: 9px;
+    }
+    input{
+        width: 300px;
+    }
+    .media-links{
+        justify-content: space-around;
+    }
+    .link h5{
+        font-size: 13px;
+    }
+    .link a{
+        font-size: 11px;
+    }
+    footer ul{
+        gap: 15px;
+    }
+}
+@media(max-width:420px){
+    .navigators .hollow-btn {
+        display: none;
+    }
+    .navigators {
+        padding: 0px 20px;
+    }
+    .white-bg .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .white-bg .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .white-bg .pricing-tag {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .middle-sec {
+        display: block;
+    }
+
+
+}
+
+

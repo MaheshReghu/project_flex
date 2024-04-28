@@ -1,6 +1,6 @@
 * {
     font-family: "montserrat";
-    /* font-weight: 700; */
+    box-sizing: border-box;
 }
 
 :root {
@@ -139,7 +139,6 @@ li{
 }
 .dropdown-menu ul li{
     padding: 10px;
-    border: 1px solid #03195f;
     align-items: center;
 }
 .dropdown-menu ul li:hover{
@@ -153,6 +152,14 @@ li{
     position: absolute;
     background-color: #2b428f;
 }
+
+/* dropdown end.. */
+
+.menu-bar{
+    display: none;
+    color: var(--primary-text-color);
+}
+
 .navigator-link ul {
     display: flex;
     gap: 15px;
@@ -813,4 +820,5 @@ footer .container{
     font-size: 20px;
     padding-right: 5%;
 }
+
 
