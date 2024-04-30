@@ -77,6 +77,10 @@
     .media-links {
         justify-content: space-around;
     }
+    .middle-sec h1::before {
+        height: 5px;
+        width: 70px;
+    }
     
 footer .about {
     display: grid;
@@ -143,6 +147,7 @@ footer .about {
         display: grid; 
         grid-template-columns: repeat(2, 1fr);
     }
+    
     footer .about{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -302,7 +307,10 @@ footer .about {
     .middle-sec {
         display: block;
     }
-
+    .middle-sec h1::before {
+        height: 4px;
+        width: 60px;
+    }
 
 }
 
