@@ -3,11 +3,11 @@
         padding: 0px 30px;
     }
 }
-@media(max-width:1100px){
+/* @media(max-width:1100px){
     .container{
         padding: 70px 30px;
     }
-}
+} */
 @media(max-width:1024px){
     .container-large{
         padding: 0px 35px;
@@ -115,43 +115,47 @@ footer .about {
         display: flex;
         gap: 12px;
        }
+
+       /* hamburger */
+
     .navigator-link ul{
-        display: none;
-    }
-        /* position: fixed;
-        top: 80px;
+      position: fixed;
+        top: 60px;
         left: -100%;
-        background-color: #333;
-        height: 100%;
+        background-color:  #243776;
+        height: 100vh;
         width: 100%;
         display: block;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
     }
-    #checking:checked ~ .navigator-link ul{
-        left: 0%;
-     } */
-    /* .navigator-link ul li{
+    
+    .navigator-link ul li{
         margin: 20px 0px;
     }
     .navigator-link ul li a{
         font-size: 15px;
     }
-     .menu-bar input{
-        width: unset;
-     } */
-
-    /* #checking:checked ~ .menu-bar span::before{
-        content: ;
-    } */
-    
-    .banner img{
+    .navigator-link ul li span{
         display: none;
+    }
+    #click:checked ~ ul{
+        left: 0%;
     }
     .menu-bar{
         display: block;
     }
-    .menu-bar .material-symbols-outlined{
-        font-size: 33px;
+    
+    /* hamburger end*/
+    .banner img{
+        display: none;
+    }
+    
+    .navigator-link input{
+        width: unset;
     }
     button{
         font-size: 10px

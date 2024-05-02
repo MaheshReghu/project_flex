@@ -155,9 +155,15 @@ li{
 
 /* dropdown end.. */
 
+.navigator-link input{
+    display: none;
+}
 .menu-bar{
     display: none;
     color: var(--primary-text-color);
+}
+.menu-bar .material-symbols-outlined {
+    font-size: 33px;
 }
 
 .navigator-link ul {
@@ -474,6 +480,7 @@ img{
 .middle-sec {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12%;
 }
 
