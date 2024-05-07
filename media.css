@@ -118,6 +118,9 @@ footer .about {
         display: flex;
         gap: 12px;
        }
+       .navigators .hollow-btn {
+        display: none;
+    }
 
        /* hamburger */
 
@@ -133,22 +136,22 @@ footer .about {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 0px;
         padding: 0px;
         margin: unset;
         transition: all 0.5s ease-in-out;
     }
 
+ 
     .navigator-link ul li{
         margin: 20px 0px;
-    }
+        position: relative;
+       
+    } 
     .navigator-link ul li a{
         font-size: 15px;
-        width: 90px;
     }
-    /* .navigator-link ul li span{
-        display: none;
-    } */
     #click:checked ~ ul{
         left: 0%;
     }
@@ -161,14 +164,21 @@ footer .about {
         top: 4px;
     }
     .dropdown-menu{
-        position: relative;
-        top: 0;
+        display: none;
     }
-    /* .navigator-link li .dropdown-menu ul{
-        display: unset
-    } */
+    
+    .navigator-link li .dropdown-menu ul{
+        top: 0;
+       
+    }
+    .dropdown-menu {
+        top: -10px;
+        position: relative;
+    }
     .dropdown-menu ul li{
-        display: unset;
+       margin: 0;
+       width: 100px;
+       background-color:  #2b428f;
     }
     
     /* hamburger end*/
@@ -227,9 +237,7 @@ footer .about {
        p{
         font-size: 10px;
        }
-    .navigators .hollow-btn {
-        display: none;
-    }
+    
     .middle-sec img{
         display: none;
     }

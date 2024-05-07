@@ -125,12 +125,10 @@ li{
 .dropdown-menu li a{
     font-size: 12px;
 }
-/* .navigator-link ul span{
+.navigator-link ul span{
     font-size: 18px;
-} */
-.dropside-menu ul{
-    background-color:  #2b428f;
 }
+
 .dropdown-menu ul li{
     padding: 10px;
     align-items: center;
