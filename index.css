@@ -125,15 +125,9 @@ li{
 .dropdown-menu li a{
     font-size: 12px;
 }
-.dropdown-menu li .dropside-menu{
-    display: none;
-    position: absolute;
-    left: 100%;
-    bottom: 5%;
-}
-.dropdown-menu li:hover .dropside-menu{
-    display: block;
-}
+/* .navigator-link ul span{
+    font-size: 18px;
+} */
 .dropside-menu ul{
     background-color:  #2b428f;
 }
@@ -151,6 +145,8 @@ li{
     top: 100%;
     position: absolute;
     background-color: #2b428f;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 /* dropdown end.. */

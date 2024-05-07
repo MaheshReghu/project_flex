@@ -17,14 +17,15 @@
         margin: auto;
     }
     .cards{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     
     }
     .products{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
 }
-@media(max-width:834px){
+@media(max-width:900px){
     h5{
         font-size: 14px;
        }
@@ -71,9 +72,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .pricing-tag {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    
     .media-links {
         justify-content: space-around;
     }
@@ -119,11 +122,11 @@ footer .about {
        /* hamburger */
 
     .navigator-link ul{
-      position: fixed;
-        top: 60px;
+      position: absolute;
+        top: 0;
         left: -100%;
         background-color:  #243776;
-        height: auto;
+        height: 100%;
         width: 100%;
         display: block;
         text-align: center;
@@ -132,22 +135,40 @@ footer .about {
         align-items: center;
         gap: 0px;
         padding: 0px;
+        margin: unset;
+        transition: all 0.5s ease-in-out;
     }
-    
+
     .navigator-link ul li{
         margin: 20px 0px;
     }
     .navigator-link ul li a{
         font-size: 15px;
+        width: 90px;
     }
-    .navigator-link ul li span{
+    /* .navigator-link ul li span{
         display: none;
-    }
+    } */
     #click:checked ~ ul{
         left: 0%;
     }
     .menu-bar{
         display: block;
+    }
+    .navigator-link ul label span{
+        position: absolute;
+        right: 4px;
+        top: 4px;
+    }
+    .dropdown-menu{
+        position: relative;
+        top: 0;
+    }
+    /* .navigator-link li .dropdown-menu ul{
+        display: unset
+    } */
+    .dropdown-menu ul li{
+        display: unset;
     }
     
     /* hamburger end*/
@@ -173,10 +194,6 @@ footer .about {
         grid-template-columns: repeat(2, 1fr);
     }
     .white-bg .products{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .white-bg .pricing-tag{
-        display: grid; 
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -220,7 +237,12 @@ footer .about {
     input{
         width: inherit;
     }
-    
+    .tick-icon h4{
+        font-size: 14px;
+    }
+    .tick-icon h5{
+        font-size: 14px;
+    }
     .text-box h4 {
         font-size: 12px;
         width: 390px;
@@ -319,9 +341,9 @@ footer .about {
     .white-bg .products {
         grid-template-columns: repeat(1, 1fr);
     }
-    .white-bg .pricing-tag {
+    /* .white-bg .pricing-tag {
         grid-template-columns: repeat(1, 1fr);
-    }
+    } */
     footer .about {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -341,6 +363,48 @@ footer .about {
         width: 60px;
     }
 
+}
+@media(max-width:360px){
+    .navigators {
+        padding: 0px 10px;
+    }
+    .navigator-link {
+        gap: 2px;
+    }
+    .navigators .filled-btn {
+        padding: 12px;
+    }
+    .banner{
+        padding: 0px 10px;
+    }
+    .introduction {
+        padding-bottom: 30px;
+        gap: 18px;
+    }
+    .banner .hollow-btn{
+        padding: 13px;
+    }
+    .banner .filled-btn{
+        padding: 13px;
+    }
+    .icon-links{
+        gap: 12px;
+        padding: unset;
+    }
+    .footer-text p{
+        font-size: 9px;
+    }
+    .footer-tail i {
+        font-size: 16px;
+    }
+    footer .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about .link{
+       /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
 }
 
 
