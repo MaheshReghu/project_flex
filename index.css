@@ -96,8 +96,9 @@ li{
 }
 .navigators {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+   
 }
 .site-id {
     font-weight: 700;
@@ -109,10 +110,51 @@ li{
     gap: 35px;
     align-items: center;
 }
+.open-menu{
+    display: none;
+}
+.open-menu, .close-menu{
+    color: white;
+}
+
+.close-menu{
+    display: none;
+}
 
 /* drop down */
 
-.navigator-link li:hover .dropdown-menu{
+.navigator-link .dropdown-menu{
+display: none;
+background-color: #2435A1;
+flex-direction: column;
+padding: 0;
+position: absolute;
+}
+.navigator-link .dropdown-menu li{
+    display: block;
+    padding: 10px;
+}
+.navigator-link ul li:hover .dropdown-menu{
+    display: block;
+} 
+
+/* .navigator-link  .dropdown-menu li{
+    display: block;
+}
+.navigator-link .dropdown-menu{
+    background-color: #22438c;
+    position: absolute;
+    flex-direction: column;
+    padding: 0;
+
+}
+.navigator-link ul li a:hover{
+    background-color: #112c66;
+}
+.navigator-link ul li:hover ul .dropdown-menu{
+    display: block;
+} */
+/* .navigator-link li:hover .dropdown-menu{
     display: block;
 }
 .navigator-link li .dropdown-menu{
@@ -143,15 +185,15 @@ li{
     top: 100%;
     position: absolute;
     background-color: #2b428f;
-    transition: all 0.5s ease-in-out;
-    
-}
+    transition: all 0.5s ease-in-out;   
+} */
 
 /* dropdown end.. */
 
-.navigator-link input{
+.navigators input{
     display: none;
 }
+
 .menu-bar{
     display: none;
     color: var(--primary-text-color);
@@ -159,17 +201,21 @@ li{
 .menu-bar .material-symbols-outlined {
     font-size: 33px;
 }
+.hamburger-btn{
+    display: none;
+}
 
 .navigator-link ul {
     display: flex;
     gap: 15px;
     font-size: 14px;
     position: relative;
+    align-items: center;
    
 }
 .navigator-link li{
     list-style: none;
-    display: flex;
+   
 }
 .navigator-link a {
     color: var(--primary-text-color);
@@ -244,6 +290,7 @@ img{
     display: flex;
     gap: 10px;
 }
+
 /*  */
 
 .cards {
@@ -735,7 +782,7 @@ img{
     gap: 25px;
 }
 
-input {
+.emai-btn input {
     border-radius: 5px 0px 0px 5px;
     border: transparent;
     width: 520px;
