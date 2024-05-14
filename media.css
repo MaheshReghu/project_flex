@@ -139,6 +139,7 @@ footer .about {
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease-in-out;
+        gap: 25px;
       }
       #check:checked~.navigator-link ul{
         left: 0;
@@ -153,10 +154,11 @@ footer .about {
     }
     .hamburger-btn .hollow-btn{
         color: var(--primary-color);
+        padding: 10px 10px;
     }
     .hamburger-btn .filled-btn{
         border-radius: 40px;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
       .navigators .btn{
         display: none;
@@ -183,10 +185,17 @@ footer .about {
     .open-menu span{
         font-size: 30px;
     }
-    
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .navigator-link ul .dropdown-menu {
        position: unset;
        background-color: transparent;
+    }
+    .navigator-link ul li span{
+        display: none;
     }
     .navigator-link ul .dropdown-menu li{
         padding: 5px;
@@ -265,7 +274,7 @@ footer .about {
 }
 @media(max-width:640px){
     h5{
-        font-size: 10px;
+        font-size: 12px;
        }
        h1{
         font-size: 25px;
@@ -280,14 +289,14 @@ footer .about {
         font-size: 20px;
        }
        p{
-        font-size: 10px;
+        font-size: 12px;
        }
     
     .middle-sec img{
         display: none;
     }
     
-    input{
+    .email-btn input{
         width: inherit;
     }
     .tick-icon h4{
@@ -318,7 +327,7 @@ footer .about {
 }
 @media(max-width:540px){
     h5{
-        font-size: 10px;
+        font-size: 12px;
        }
        h1{
         font-size: 25px;
@@ -333,7 +342,7 @@ footer .about {
         font-size: 20px;
        }
        p{
-        font-size: 10px;
+        font-size: 12px;
        } 
        .introduction{
         gap: 25px;
@@ -400,6 +409,17 @@ footer .about {
     footer .about {
         grid-template-columns: repeat(2, 1fr);
     }
+    .icon-links i{
+        font-size: 16px;
+    }
+    .media-links {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0px ;
+    }
 }
 @media(max-width:420px){
     
@@ -443,7 +463,7 @@ footer .about {
         padding: unset;
     }
     .footer-text p{
-        font-size: 9px;
+        font-size: 10px;
     }
     .footer-tail i {
         font-size: 16px;
@@ -451,11 +471,11 @@ footer .about {
     footer .about {
         grid-template-columns: repeat(1, 1fr);
     }
-    .about .link{
-       /* display: flex;
+    /* .about .link{
+       display: flex;
         flex-direction: column;
-        align-items: center; */
-    }
+        align-items: center;
+    } */
 }
 
 
